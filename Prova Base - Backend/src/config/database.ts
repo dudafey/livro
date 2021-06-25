@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 mongoose
   .connect(
-    "sua conexão com o banco",
+    "mongodb+srv://topicos:topicos@clustertopicosavancados.oec7r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => {

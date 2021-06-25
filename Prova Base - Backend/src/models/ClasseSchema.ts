@@ -2,17 +2,20 @@ import { model, Schema } from "mongoose";
 
 const classeSchema = new Schema(
   {
-    atributo1: {
+    nome: {
       type: String,
-      required: [true, "O campo atributo1 é obrigatório!"],
+      required: [true, "O campo nome é obrigatório!"],
     },
-    atributo2: {
+    isbn: {
       type: String,
-      required: [true, "O campo atributo2 é obrigatório!"],
+      required: [true, "O campo isbn é obrigatório!"],
     },
-    atributo3: {
+    preco: {
       type: Number,
-      required: [true, "O campo atributo3 é obrigatório!"],
+      required: [true, "O campo preco é obrigatório!"],
+    },
+    criadoEm: {
+      type: Date 
     },
   },
   {
@@ -20,4 +23,4 @@ const classeSchema = new Schema(
   }
 );
 
-export default model("nomeColecao", classeSchema);
+export default model("livro", classeSchema);

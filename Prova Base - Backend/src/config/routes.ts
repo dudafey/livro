@@ -4,7 +4,7 @@ import { ClasseController } from "../controllers/ClasseController";
 const router = Router();
 const classeController = new ClasseController();
 
-router.post("/classe/cadastrar", classeController.cadastrar);
-router.get("/classe/listar", classeController.listar);
+router.post("/livro/cadastrar", classeController.cadastrar);
+router.get("/livro/listar", classeController.listar);
 
 export { router };
